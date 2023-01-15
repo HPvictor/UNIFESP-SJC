@@ -1,0 +1,7 @@
+
+	int x;
+	int y;
+	int soma;
+	x = 3;
+	y = 2;
+	soma = x + y;

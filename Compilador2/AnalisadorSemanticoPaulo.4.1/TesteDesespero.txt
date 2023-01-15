@@ -1,0 +1,9 @@
+int main(void)
+{
+	int i;
+	int j;
+	i = 0;
+	j = i + 1;
+
+	return j;
+}
