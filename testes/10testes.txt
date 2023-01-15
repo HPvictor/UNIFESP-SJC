@@ -1,0 +1,134 @@
+/* programa teste */
+
+int vet[ 3 ];
+
+int input(void)
+{
+}
+
+void output(int x)
+{
+}
+
+int gcd (int u, int v)
+{       
+	if (v == 0) return u ;
+	else return gcd(v,u-u/v*v);
+	/* u-u/v*v == u mod v */
+}
+
+int media (int u, int v)
+{
+    return ((u+v)/2);
+}
+
+int primeiro (int u, int v)
+{
+    return (u*10);
+}
+
+int segundo (int u, int v)
+{
+    return (v*10);
+}
+
+int digitos (int u, int v)
+{
+    return (10*u+v);
+}
+
+int menor (int u, int v)
+{
+    if (u <= v)
+    {
+        return u;
+    }
+    else
+    {
+        return v;
+    }
+}
+
+int maior (int u, int v)
+{
+    if (u > v)
+    {
+        return u;
+    }
+    else
+    {
+        return v;
+    }
+}
+
+int soma (int u, int v)
+{
+    return (u+v);
+}
+
+int sub (int u, int v)
+{
+    return (u-v);
+}
+
+int mult (int u, int v)
+{
+    return (u*v);
+}
+
+int div (int u, int v)
+{
+    return (u/v);
+}
+
+void main(void)
+{	int x; int y; int p;
+	x = input(); y = input();
+	p = input();
+    if (p == 0)
+    {
+        output(gcd(x, y));
+    }
+    else if (p == 1)
+    {
+        output(menor(x, y));
+    }
+    else if (p == 2)
+    {
+        output(maior(x, y));
+    }
+    else if (p == 3)
+    {
+        output(soma(x, y));
+    }
+    else if (p == 4)
+    {
+        output(sub(x, y));
+    }
+    else if (p == 5)
+    {
+        output(mult(x, y));
+    }
+    else if (p == 6)
+    {
+        output(div(x, y));
+    }
+    else if (p == 7)
+    {
+        output(primeiro(x, y));
+    }
+    else if (p == 8)
+    {
+        output(segundo(x, y));
+    }
+
+    else if (p == 9)
+    {
+        output(digitos(x, y));
+    }
+
+    else
+    {
+        output(media(x, y));
+    }
+}
